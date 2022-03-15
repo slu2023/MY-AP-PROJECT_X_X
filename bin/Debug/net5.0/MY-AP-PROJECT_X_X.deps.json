@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "MY-AP-PROJECT_X_X/1.0.0": {
+        "runtime": {
+          "MY-AP-PROJECT_X_X.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MY-AP-PROJECT_X_X/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

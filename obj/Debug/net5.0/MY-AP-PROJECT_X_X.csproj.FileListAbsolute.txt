@@ -1,0 +1,15 @@
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/bin/Debug/net5.0/MY-AP-PROJECT_X_X.deps.json
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/bin/Debug/net5.0/MY-AP-PROJECT_X_X.runtimeconfig.json
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/bin/Debug/net5.0/MY-AP-PROJECT_X_X.runtimeconfig.dev.json
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/bin/Debug/net5.0/MY-AP-PROJECT_X_X.dll
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/bin/Debug/net5.0/ref/MY-AP-PROJECT_X_X.dll
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/bin/Debug/net5.0/MY-AP-PROJECT_X_X.pdb
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/obj/Debug/net5.0/MY-AP-PROJECT_X_X.csproj.AssemblyReference.cache
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/obj/Debug/net5.0/MY-AP-PROJECT_X_X.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/obj/Debug/net5.0/MY-AP-PROJECT_X_X.AssemblyInfoInputs.cache
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/obj/Debug/net5.0/MY-AP-PROJECT_X_X.AssemblyInfo.cs
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/obj/Debug/net5.0/MY-AP-PROJECT_X_X.csproj.CoreCompileInputs.cache
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/obj/Debug/net5.0/MY-AP-PROJECT_X_X.dll
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/obj/Debug/net5.0/ref/MY-AP-PROJECT_X_X.dll
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/obj/Debug/net5.0/MY-AP-PROJECT_X_X.pdb
+/Users/shiyaolu/Documents/GitHub/MY-AP-PROJECT_X_X/obj/Debug/net5.0/MY-AP-PROJECT_X_X.genruntimeconfig.cache
