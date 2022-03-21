@@ -6,19 +6,33 @@ namespace MY_AP_PROJECT_X_X
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine("Hello World!");
+            // Console.ForegroundColor = ConsoleColor.DarkBlue;
+
+            // Checks if the user added a command line argument
+            // Also checks if the first argument is "test"
+            if (args.Length > 0 && args[0] == "test")
+            {
+                TestAll();
+                return; // Exits the program
+            }
         }
+
+        public static void TestAll()
+        {
+            string testTheWord = TestTheWord.RunTest();
+            Console.WriteLine($"Test TheWord(words);{testTheWord}");
+            string testUserInput = TestUserInput.RunTest();
+            Console.WriteLine($"Test UserInput(words);{testUserInput}");
+            bool testInfo = TestInfo.RunTest();
+            Console.WriteLine($"Test Info(words);{testInfo}");
+        }
+
 
         /// <summary>
         /// Generates a word for the player to guess
         /// </summary>
         /// <returns>the random word that was generated</returns>
-        public static string TheWord()
-        {
-            return null;
-        }
-
+    
         public static string TheWord()
         {
 
@@ -66,7 +80,7 @@ namespace MY_AP_PROJECT_X_X
         /// <returns>The positive number the user chose</returns>
         public static void Info(string guess, string correct)
         {
-           
+
         }
 
         public static void Info(char letter, int pos, string correct)
@@ -77,7 +91,7 @@ namespace MY_AP_PROJECT_X_X
             // 3. If the guess is not in the correct word, select grey.
             // 4. Display the guess
             // 5. Reset the color back to white before returning
-           
+
         }
     }
 }
