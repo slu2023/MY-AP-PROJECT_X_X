@@ -15,7 +15,7 @@ namespace MY_AP_PROJECT_X_X
             guess = Console.ReadLine();
             if (guess == word)
             {
-                Console.Error.WriteLine("The word is {TheWord}");
+                Console.Error.WriteLine($"The word is {word}");
             }
             else
             {
@@ -23,9 +23,9 @@ namespace MY_AP_PROJECT_X_X
 
                 foreach (char letter in guess)
                 {
-                    if (word.Contains(guess) == true)
+                    if (word.Contains(letter) == true)
                     {
-                        if (guess[pos] == word[pos])
+                        if (letter == word[pos])
                         {
                             Console.ForegroundColor = ConsoleColor.DarkGreen;
                         }
@@ -39,9 +39,10 @@ namespace MY_AP_PROJECT_X_X
                     {
                         Console.ForegroundColor = ConsoleColor.DarkGray;
                     }
+                    Console.Write(letter);
+                    pos = pos + 1;
 
                 }
-                pos = pos + 1;
             }
             Console.ForegroundColor = ConsoleColor.Black;
             return false;

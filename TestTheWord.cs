@@ -6,7 +6,6 @@ namespace MY_AP_PROJECT_X_X
 {
     class TestTheWord
     {
-        private static int wordsCount;
 
         public static string RunTest()
         {
@@ -27,13 +26,15 @@ namespace MY_AP_PROJECT_X_X
             words.Add("basketball");
 
             Random generator = new Random();
-            int index = generator.Next(0, wordsCount);
+            int index = generator.Next(0, words.Count);
 
-            string word = "banana";
+            string word = words[index];
             int length = word.Length;
             string randomWord = words[index];
             Console.WriteLine("Your random word is generated!");
-            Console.WriteLine("It contains {Length} letters");
+            Console.WriteLine($"It contains {randomWord.Length} letters");
+
+    
 
             return null;
 
