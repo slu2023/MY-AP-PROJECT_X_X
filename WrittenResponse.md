@@ -54,34 +54,12 @@ in the list, as part of fulfilling the program's purpose.
 
 ```csharp
 
-if (guess == correct)
-{
-    Console.Error.WriteLine($"The word is {correct}");
-}
-else
-{
-    int pos = 0;
+Random generator = new Random();
+int index = generator.Next(0, words.Count);
 
-    foreach (char letter in guess)
-    {
-        if (correct.Contains(letter) == true)
-        {
-            if (letter == correct[pos])
-            {
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.DarkYellow;
-            }
-        }
-
-        else
-        {
-            Console.ForegroundColor = ConsoleColor.DarkGray;
-        }
-        Console.Write(letter);
-        pos = pos + 1;
+string word = words[index];
+int length = word.Length;
+string randomWord = words[index];
 
 ```
 
@@ -106,7 +84,7 @@ explaining why your program code could not be written, or how it would be
 written differently, if you did not use the list.
 
 My list manages complexity by allowing me to easily add words without make a bunch of changes to my code.  
-Without a list, I would have to create several new word variables each time I want to add a code. 
+Without a list, I would have to create several new word variables each time I want to add a code. And I would have to create many if-else statement to pick a random word.
 
 ## 3c.
 
@@ -124,46 +102,45 @@ The first program code segment must be a student-developed procedure that:
 
 ```csharp
 
-public static bool Info(string guess, string correct)
+public static void Info(string guess, string correct)
+{
+    // string word = "basketball";
+    int length = correct.Length;
+    // Console.WriteLine("Your guess:  ");
+    // guess = Console.ReadLine();
+    if (guess == correct)
+    {
+        Console.Error.WriteLine($"The word is {correct}");
+    }
+    else
+    {
+        int pos = 0;
+
+        foreach (char letter in guess)
         {
-            // string word = "basketball";
-            int length = correct.Length;
-            // Console.WriteLine("Your guess:  ");
-            // guess = Console.ReadLine();
-            if (guess == correct)
+            if (correct.Contains(letter) == true)
             {
-                Console.Error.WriteLine($"The word is {correct}");
-            }
-            else
-            {
-                int pos = 0;
-
-                foreach (char letter in guess)
+                if (letter == correct[pos])
                 {
-                    if (correct.Contains(letter) == true)
-                    {
-                        if (letter == correct[pos])
-                        {
-                            Console.ForegroundColor = ConsoleColor.DarkGreen;
-                        }
-                        else
-                        {
-                            Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        }
-                    }
-
-                    else
-                    {
-                        Console.ForegroundColor = ConsoleColor.DarkGray;
-                    }
-                    Console.Write(letter);
-                    pos = pos + 1;
-
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
                 }
             }
-            Console.ForegroundColor = ConsoleColor.Black;
-            return false;
+
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+            }
+            Console.Write(letter);
+            pos = pos + 1;
+
         }
+    }
+    Console.ForegroundColor = ConsoleColor.Black;
+}
 
 ```
 
@@ -188,8 +165,8 @@ Check if the user guessed the correct word.  If not, this method will display co
 
 Explains in detailed steps how the algorithm implemented in the identified procedure works. Your explanation must be detailed enough for someone else to recreate it.
 
-1. Compare the user guess with the correct word.
-2. Loop through for each info display in the guess.
+1. Compare the user guess with the correct word. If incorrect ???
+2. Else Loop through for each info display in the guess.
 3. Display the info.
 4. Reset the color back.
 5. Return.
@@ -210,11 +187,11 @@ Describes two calls to the procedure identified in written response 3c. Each cal
 
 First call:
 
-Choice(null);
+Info("basketball", "basketball");
 
 Second call:
 
-Choice(char letter, int pos, string correct);
+Info("burger", "banana");
 
 ### 3d ii.
 
@@ -222,19 +199,18 @@ Describes what condition(s) is being tested by each call to the procedure
 
 Condition(s) tested by the first call:
  
-This tests that the method fails when the input is null by throwing an exception.
-This will test if the input is mull thus executing the body of the if statement.
+This tests how the method works when the user guesses the correct word.
 
 Condition(s) tested by the second call:
 
-This tests that the method runs when then input is not null.
+The user guess word "burger" doesn't match with the correct word "banana".
 
 ### 3d iii.
 
 Result of the first call:
 
-This result is an exception is thrown.
+When the user guessed the word, the correct word will be displayed.
 
 Result of the second call:
 
-The result is some color-information being displayed. 
+The user guess result is unmatched with the correct word, different color info will be displayed based on the guess and correct word comparison.  For example, letter "b" would be in green because it exists in the correct word, and also the correct position. The rest of the letters would be grey because they doesn't exist in the correct word. 

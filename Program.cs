@@ -113,7 +113,7 @@ namespace MY_AP_PROJECT_X_X
         /// </summary>
         /// <param name="prompt">The message to display to the user</param>
         /// <returns>The positive number the user chose</returns>
-        public static bool Info(string guess, string correct)
+        public static void Info(string guess, string correct)
         {
             // string word = "basketball";
             int length = correct.Length;
@@ -151,7 +151,6 @@ namespace MY_AP_PROJECT_X_X
                 }
             }
             Console.ForegroundColor = ConsoleColor.Black;
-            return false;
         }
 
         public static void Info(char letter, int pos, string correct)
